@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Invitacion Rubi Regalado Sotelo</title>
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <div class="portada">
+        <img
+          src="recursos/portada.jpeg"
+          width="100%"
+          height="100%"
+          alt="portada"
+        />
+        <div class="textoPortada">Mis XV</div>
+        <div class="textoNovios">Rubi</div>
+      </div>
+
+      <div class="espectro">
+        <h1>Mi Canción</h1>
+        <img src="recursos/espectro.webp" alt="" />
+      </div>
+
+      <div class="reproducir">
+        <button onclick="PlayAudio()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-play-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="contador">
+        <p class="frase">
+          Te invito a celebrar mis XV años: una noche llena de sueños, risas y recuerdos para compartir junto a quienes más quiero.
+        </p>
+        <div class="fecha">20 | 12 | 25</div>
+        <div class="conteo">Solo Faltan:</div>
+
+        <section>
+          <table align="center" width="90%">
+            <tr>
+              <td><span id="days"></span></td>
+              <td><span id="hours"></span></td>
+              <td><span id="minutes"></span></td>
+              <td><span id="seconds"></span></td>
+            </tr>
+            <tr>
+              <th>Días</th>
+              <th>Horas</th>
+              <th>Minutos</th>
+              <th>Segundos</th>
+            </tr>
+          </table>
+        </section>
+      </div>
+
+      <div class="bienvenida">
+        <div class="card" style="width: 80%; height: 50%; align-items: center">
+          <div class="card-body">
+            <h5 class="card-title">Mis XV Años</h5>
+            <p class="card-text" id="agradecimiento">
+                "Hoy celebro mis quince años, un momento único donde la niñez se 
+                transforma en juventud. Con la bendición de Dios y el amor de mi 
+                familia, inicio esta nueva etapa de mi vida."
+            </p>
+            <img src="recursos/" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="fondoPadres">
+        <div class="padres">
+          <h1>Con la bendición y el apoyo de mis padres y padrinos</h1>
+
+          <div class="padresTexto">
+            <h2>Mis Padres</h2>
+            <p>
+              Marcela Adriana Sotelo Salgado <br>
+              Gilberto Regalado Núñez
+            </p>
+          </div>
+
+          <div class="padresTexto">
+            <h2>Mis Padrinos</h2>
+            <p>
+              María del Socorro Salgado Hernández <br>  
+              Erwin Alejandro Pérez Escobedo 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cronograma">
+        <div class="tituloCronograma">
+          <h2>Cronograma</h2>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-calendar-heart"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1m7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="container left-container">
+          <div class="text-box">
+            <h2>Misa</h2>
+
+            <p>
+              04:00 PM, te invitamos a acompañarnos en la misa por mis XV años, donde daremos gracias y celebraremos este momento tan especial junto a mi familia y amigos.
+
+              <span class="left-container-arrow"></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="container left-container">
+          <div class="text-box">
+            <h2>Fiesta</h2>
+            <h5></h5>
+
+            <p>
+                Terminando la misa, acompáñanos a celebrar mis XV años: una noche de baile, música y recuerdos. Ven a compartir conmigo este momento tan especial y disfrutar de una velada inolvidable.
+
+              <span class="left-container-arrow"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vestimenta">
+        <div class="tituloV">Codigo de vestimenta</div>
+
+        <div class="textoVestimenta">
+          <p>
+            El código de vestimenta es Formal, ten en cuenta que será una noche
+            llena de diversión, ¡así que procura que sea cómodo para disfrutar
+            al máximo! 
+          </p>
+        </div>
+
+        <div class="recomendacion">
+          <h6>
+            <b>Por favor, evita usar el color Golden rose o similares ya que esta reservado para la quinceañera</b>
+          </h6>
+        </div>
+      </div>
+
+      <div class="ubicaciones">
+        <div class="card" style="width: 80%; height: 50%; align-items: center">
+          <div class="card-body">
+            <h5 class="card-title">Ubicación Misa</h5>
+            <p class="card-text">
+              Parroquia de Nuestra Señora de la Asunción
+              <br />
+              Calle Ote. 40 Mz. 39-Lt. 45, Providencia, 56616 Valle de Chalco Solidaridad, Méx.
+            </p>
+            <img src="recursos/" alt="" width="100%" />
+          </div>
+
+          <button type="button" class="btn btn-light" id="ubicacion">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-geo-alt-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+              />
+            </svg>
+            <a href="https://maps.app.goo.gl/HzcKhSZpt3XQmcW46">Ubicación</a>
+          </button>
+        </div>
+
+        <div class="card" style="width: 80%; height: 50%; align-items: center">
+          <div class="card-body">
+            <h5 class="card-title">Ubicación Fiesta</h5>
+            <p class="card-text">
+              Calle Ote 41, Mz. 51, Lt. 10, entre Nte 1 y 2 Col. Providencia, Valle de Chalco, Méx.
+            </p>
+            <img src="recursos/salon.jpeg" alt="" width="100%" />
+          </div>
+
+          <button type="button" class="btn btn-light" id="ubicacion">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-geo-alt-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+              />
+            </svg>
+            <a href="https://maps.app.goo.gl/99MZv3HQDgtefy3GA">Ubicación</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="mesa">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10%"
+          height="10%"
+          fill="currentColor"
+          class="bi bi-envelope-paper-heart-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="m3 7.5 3.5 2L8 8.75l1.5.75 3.5-2v-6A1.5 1.5 0 0 0 11.5 0h-7A1.5 1.5 0 0 0 3 1.5zM2 3.133l-.941.502A2 2 0 0 0 0 5.4v.313l2 1.173zm12 3.753 2-1.173V5.4a2 2 0 0 0-1.059-1.765L14 3.133zm-3.693 3.324L16 6.873v6.5zm5.634 4.274L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516M5.693 10.21 0 13.372v-6.5zM8 1.982C9.664.309 13.825 3.236 8 7 2.175 3.236 6.336.31 8 1.982"
+          />
+        </svg>
+        <h2 class="tituloMesa">Mesa de regalos</h2>
+        <div class="frase">
+          <p>
+            "Habrá lluvia de sobres. Tu compañía es el mejor regalo, pero si deseas contribuir, puedes traer un sobre con dinero o cualquier otro obsequio."
+          </p>
+        </div>
+      </div>
+
+      <div class="confirmar">
+        <div class="tituloConfirmar">
+          <h2>Confirmar Asistencia</h2>
+
+          <p>
+            Nos encantaria contar con tu presencia, es por eso que te pedimos
+            que confirmes asistencia. ¡Gracias!
+            <br />
+            <br />
+            <small></small>
+          </p>
+        </div>
+
+        <div class="botones">
+          <button type="button" class="btn btn-light">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-calendar-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1m7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"
+              />
+            </svg>
+
+            <a href="">Confirmar Asistencia</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="musica">
+        <audio id="musica1" controls autoplay loop>
+          <source src="/recursos/" />
+          Este navegador no acepta formatos de audio
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
