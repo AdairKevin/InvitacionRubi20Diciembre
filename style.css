@@ -49,10 +49,10 @@ button {
   text-align: center;
   position: absolute;
   width: 100%;
-  top: 15%;
+  top: 17%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #d9c6ba;
+  color: #D9A0A0;
   text-shadow: 2px 2px 4px rgb(89, 73, 59);
   text-align: center;
   font-family: "Great Vibes", cursive;
@@ -145,8 +145,8 @@ section {
   width: 100%;
   padding: 5px;
   border-radius: 10px;
-  border: 1px solid #d9c6ba;
-  background-color: #d9c6ba;
+  border: 1px solid #D9A0A0;
+  background-color: #D9A0A0;
   -webkit-animation: shadow-drop-2-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -159,7 +159,7 @@ table {
 }
 
 td {
-  border: 3px solid #d9c6ba;
+  border: 3px solid #D9A0A0;
   border-bottom: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -174,7 +174,7 @@ td {
 }
 
 th {
-  border: 3px solid #d9c6ba;
+  border: 3px solid #D9A0A0;
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -213,7 +213,7 @@ th {
 }
 
 .bienvenida .card {
-  border: 5px ridge #f2f2f2;
+  border: 5px ridge #F2D5D5;
 }
 
 .bienvenida h5 {
@@ -241,24 +241,18 @@ th {
 }
 
 .fondoPadres {
-  background: linear-gradient(
-    45deg,
-    #6e6e6e,
-    /* Gris oscuro metálico */ #8c8c8c,
-    /* Gris intermedio */ #a6a6a6,
-    /* Plata medio */ #d9d9d9,
-    /* Plata claro */ #f2f2f2,
-    /* Brillo plateado */ #d9d9d9,
-    /* Plata claro */ #a6a6a6,
-    /* Plata medio */ #8c8c8c,
-    /* Gris intermedio */ #6e6e6e /* Gris oscuro metálico */
-  );
-
+ background: linear-gradient(120deg,
+    #F2D5D5 0%,
+    #F2C1B6 25%,
+    #D9A0A0 55%,
+    #D99CA7 80%,
+    #594C4C 100%);
   background-size: 400% 400%;
   animation: goldShine 6s infinite linear;
   width: 100%;
   padding: 5%;
-  /*box-shadow: #bf7e04cb 0px 0px 25px 0px inset;*/
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12), inset 0 -6px 18px rgba(0,0,0,0.06);
+
 }
 
 .padres {
@@ -370,6 +364,7 @@ th {
   padding: 20px;
   position: relative;
   width: 65%;
+
 }
 
 @keyframes movedown {
@@ -418,11 +413,16 @@ th {
 
 .text-box {
   padding: 10px 20px;
-  background: #f2e4dc;
+  background: #F2D5D5;
   position: relative;
   border-radius: 10px;
   font-size: 15px;
   text-align: center;
+
+  p{
+    line-height: 20px;
+  }
+
 }
 
 .text-box h2,
@@ -440,7 +440,7 @@ h5 {
   position: absolute;
   width: 6px;
   height: 100%;
-  background: #f2e4dc;
+  background: #F2D5D5;
   left: 15%;
   top: 0;
 
@@ -488,7 +488,7 @@ h5 {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid #f2e4dc;
+  border-right: 15px solid #F2D5D5;
   left: -15px;
 }
 
@@ -496,20 +496,14 @@ h5 {
   position: relative;
   text-align: center;
   padding: 5%;
-  background: linear-gradient(
-    60deg,
-    #8c7b70,
-    /* Beige oscuro */ #a69286,
-    /* Beige medio oscuro */ #c2ad9e,
-    /* Beige intermedio */ #d9c6ba,
-    /* Beige base */ #f2e6dc,
-    /* Beige claro brillante */ #d9c6ba,
-    /* Beige base */ #c2ad9e,
-    /* Beige intermedio */ #a69286,
-    /* Beige medio oscuro */ #8c7b70 /* Beige oscuro */
-  );
-
-  background-size: 400% 400%;
+background: linear-gradient(120deg,
+    #F2D5D5 0%,
+    #F2C1B6 25%,
+    #D9A0A0 55%,
+    #D99CA7 80%,
+    #594C4C 100%);
+background-size: 200% 200%;
+animation: metallicShine 8s ease-in-out infinite;
   margin-top: 10%;
   margin-bottom: 10%;
   width: 100%;
@@ -518,6 +512,12 @@ h5 {
   view-timeline-axis: block;
   animation-timeline: --container3;
   animation-name: movevestimenta;
+}
+
+@keyframes metallicShine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @keyframes movevestimenta {
@@ -539,6 +539,8 @@ h5 {
   color: black;
   font-family: "Great Vibes", cursive;
   margin-bottom: 10px;
+  line-height: 30px;
+  margin-top: 20px;
 }
 
 .vestimenta h6 {
@@ -621,25 +623,19 @@ h6 {
 
 .card {
   margin: 0 auto;
-  background: linear-gradient(
-    60deg,
-    #6e6e6e,
-    /* Gris oscuro metálico */ #8c8c8c,
-    /* Gris intermedio */ #a6a6a6,
-    /* Plata medio */ #d9d9d9,
-    /* Plata claro */ #f2f2f2,
-    /* Brillo plateado */ #d9d9d9,
-    /* Plata claro */ #a6a6a6,
-    /* Plata medio */ #8c8c8c,
-    /* Gris intermedio */ #6e6e6e /* Gris oscuro metálico */
-  );
+  background: linear-gradient(120deg,
+    #F2D5D5 0%,
+    #F2C1B6 25%,
+    #D9A0A0 55%,
+    #D99CA7 80%,
+    #594C4C 100%);
 
   background-size: 400% 400%;
   animation: goldShine 6s infinite linear;
   width: 0%;
   height: 250px;
   margin-bottom: 10%;
-  border: 3px ridge #f2f2f2;
+  border: 3px ridge #F2D5D5;
 
   -webkit-animation: shadow-drop-2-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -661,7 +657,7 @@ h6 {
 }
 
 .hotel {
-  background-color: #c7d6bf;
+  background-color: #F2D5D5;
 }
 
 .boton {
@@ -673,18 +669,12 @@ h6 {
 .mesa {
   position: relative;
   text-align: center;
-  background: linear-gradient(
-    60deg,
-    #8c7b70,
-    /* Beige oscuro */ #a69286,
-    /* Beige medio oscuro */ #c2ad9e,
-    /* Beige intermedio */ #d9c6ba,
-    /* Beige base */ #f2e6dc,
-    /* Beige claro brillante */ #d9c6ba,
-    /* Beige base */ #c2ad9e,
-    /* Beige intermedio */ #a69286,
-    /* Beige medio oscuro */ #8c7b70 /* Beige oscuro */
-  );
+  background: linear-gradient(180deg,
+    #F2D5D5 0%,
+    #F2C1B6 25%,
+    #D9A0A0 55%,
+    #D99CA7 80%,
+    #594C4C 100%);
   background-size: 400% 400%;
   padding: 5%;
   margin-top: 15%;
@@ -926,4 +916,8 @@ h6 {
 
 .botones button {
   margin-bottom: 20px;
+}
+
+.fotos{
+  margin-bottom: -40px;
 }
